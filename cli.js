@@ -45,9 +45,9 @@ if (args.h) {
    console.log("tomorrow.")
  }
 
- if (data.daily.precipitation_hours[days] != 0) {
+ if (data.daily.precipitation_hours[day] != 0) {
 	console.log("You might need your galoshes ");
-} else if (data.daily.precipitation_hours[days] == 0) {
+} else if (data.daily.precipitation_hours[day] == 0) {
 	console.log("You will not need your galoshes ");
 }
 

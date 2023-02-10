@@ -1,0 +1,31 @@
+{
+  "name": "a02-functions-jteisner",
+  "version": "1.0.0",
+  "description": "Assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-jteisner.git"
+  },
+  "keywords": [
+    "a02"
+  ],
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module",
+  "author": "jte",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-jteisner/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-jteisner#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.40",
+    "node-fetch": "^3.3.0"
+  }
+}

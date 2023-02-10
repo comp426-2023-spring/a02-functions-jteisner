@@ -35,7 +35,7 @@ if (args.h) {
     day = 1;
  }
 
- const days = args.d 
+ const days = args.d;
 
  if (days == 0) {
    console.log("today.")
@@ -45,7 +45,7 @@ if (args.h) {
    console.log("tomorrow.")
  }
 
- if (data.daily.precipitation_hours[day] > 0) {
+ if (data.daily.precipitation_hours[days] > 0) {
 	console.log("You might need your galoshes ");
 } else {
 	console.log("You will not need your galoshes ");

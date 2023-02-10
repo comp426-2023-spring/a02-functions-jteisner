@@ -26,6 +26,7 @@ if (args.h) {
  if (args.w){ long = args.w; }
 
  const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + long + "&daily=precipitation_hours&timezone=" + timezone);
+ 
  const data = await response.json();
 
  var day = 0;
@@ -34,6 +35,12 @@ if (args.h) {
  } else {
     day = 1;
  }
+ 
+ if (data.daily.precipitation_hours[day] > 0) {
+  console.log("You might need your galoshes ");
+} else {
+  console.log("You will not need your galoshes ");
+}
 
  const days = args.d;
 
@@ -45,9 +52,5 @@ if (args.h) {
    console.log("tomorrow.")
  }
 
- if (data.daily.precipitation_hours[days] > 0) {
-	console.log("You might need your galoshes ");
-} else {
-	console.log("You will not need your galoshes ");
-}
+
 
